@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="C:\Java\WSAS\ChatRepoGradle\app\libs\slf4j-android-1.5.8.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="404eece4bb07ea211f5a879c22458775c612f0df">
+        <dex dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\slf4j-android-1.5.8-3d1a06ce99706d648aa6ffa1c4e7a722c37ed0c4.jar" />
+    </item>
+    <item
+        jar="C:\Java\WSAS\ChatRepoGradle\app\libs\osmdroid-android-4.2-javadoc .jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="70656523d1ed53a2a882252d4f27f9c8f39850ca">
+        <dex dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-javadoc -5d5d696aa3ef30483dc74b77c900a7a1b2bcfc98.jar" />
+    </item>
+    <item
+        jar="C:\Java\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        <dex dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-1efbfc36b089dd5ef6c981046f380fc29c56ebcc.jar" />
+    </item>
+    <item
+        jar="C:\Java\WSAS\ChatRepoGradle\app\libs\Parse-1.7.1.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="87c45f9f66da531a65f065ee32f603c7e6db1528">
+        <dex dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\Parse-1.7.1-6149e6e5c5536924cf1ce2b14434a610863e5794.jar" />
+    </item>
+    <item
+        jar="C:\Java\WSAS\ChatRepoGradle\app\libs\bolts-android-1.1.3.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e">
+        <dex dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.3-e9d21d798478f4dbd0d9ebb5d33ee149d2382e96.jar" />
+    </item>
+    <item
+        jar="C:\Java\WSAS\ChatRepoGradle\app\libs\osmdroid-android-4.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="f3a0c73a9ed04a5d0959789c53da9f08462bfcc2">
+        <dex dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-a20a4fba5672718e77ff06b9eebec3f47ca633bf.jar" />
+    </item>
+
+</items>

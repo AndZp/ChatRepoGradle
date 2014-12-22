@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:id="@+id/ivContAva"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/ic_launcher"
+        android:layout_alignBottom="@+id/btnContEmail" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Имяэ"
+        android:id="@+id/tvContUserName"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/ivContAva" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="На карте"
+        android:id="@+id/btnContMap"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/button3" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Чат"
+        android:id="@+id/btnContChat"
+        android:layout_below="@+id/btnContMap"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@+id/btnContMap" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="e-mail"
+        android:id="@+id/btnContEmail"
+        android:layout_below="@+id/btnContMap"
+        android:layout_toLeftOf="@+id/btnContChat" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="tvContPol"
+        android:id="@+id/tvContPol"
+        android:layout_below="@+id/tvContUserName"
+        android:layout_toRightOf="@+id/ivContAva" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="В БАН"
+        android:id="@+id/button3"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btnContMap"
+        android:layout_alignLeft="@+id/btnContEmail" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ivConOnline"
+        android:src="@android:drawable/presence_online"
+        android:layout_alignBottom="@+id/tvContUserName"
+        android:layout_alignParentLeft="true" />
+</RelativeLayout>

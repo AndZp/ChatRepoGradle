@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView"
+        android:src="@android:drawable/ic_lock_silent_mode_off"
+        android:layout_below="@+id/ivSettAva"
+        android:layout_alignParentLeft="true" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Звуковые уведомления"
+        android:id="@+id/checkBoxSound"
+        android:checked="true"
+        android:layout_alignBottom="@+id/imageView"
+        android:layout_alignLeft="@+id/checkBoxVibrate" />
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Вибрация при новом сообщении"
+        android:id="@+id/checkBoxVibrate"
+        android:checked="true"
+        android:layout_below="@+id/checkBoxSound"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:id="@+id/imageView2"
+        android:src="@android:drawable/ic_menu_always_landscape_portrait"
+        android:layout_alignTop="@+id/checkBoxVibrate"
+        android:layout_alignParentLeft="true" />
+
+    <ImageView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/ivSettAva"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_launcher"
+        android:layout_toRightOf="@+id/checkBoxVibrate" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Large Text"
+        android:id="@+id/tvUserName"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true" />
+
+</RelativeLayout>
