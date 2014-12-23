@@ -7,10 +7,16 @@
             dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\slf4j-android-1.5.8-3d1a06ce99706d648aa6ffa1c4e7a722c37ed0c4.jar" />
     </item>
     <item
-        jar="C:\Java\sdk\extras\android\m2repository\com\android\support\support-v4\18.0.0\support-v4-18.0.0.jar"
-        jumboMode="false" revision="21.1.2" sha1="44ec51e9d395a47aab135e5e1b556c0007442156">
+        jar="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\libs\internal_impl-21.0.0.jar"
+        jumboMode="false" revision="21.1.2" sha1="1609e6d42d0480b0f4188e2c29f75388fa12a8f0">
         <dex
-            dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-1efbfc36b089dd5ef6c981046f380fc29c56ebcc.jar" />
+            dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-a877495e2b6b897abae1ccf25d25548c2ea7bbbe.jar" />
+    </item>
+    <item
+        jar="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\exploded-aar\com.google.android.gms\play-services\6.5.87\classes.jar"
+        jumboMode="false" revision="21.1.2" sha1="dd9247ea0fabe8ee479638c4b4a23e93752be256">
+        <dex
+            dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\classes-f17ebfd57698bb941df897eba37a4819b77eeffb.jar" />
     </item>
     <item jar="C:\Java\WSAS\ChatRepoGradle\app\libs\Parse-1.7.1.jar" jumboMode="false"
         revision="21.1.2" sha1="87c45f9f66da531a65f065ee32f603c7e6db1528">
@@ -22,21 +28,33 @@
         <dex
             dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-a20a4fba5672718e77ff06b9eebec3f47ca633bf.jar" />
     </item>
+    <item jar="C:\Java\WSAS\ChatRepoGradle\app\libs\osmdroid-android-4.2-javadoc .jar"
+        jumboMode="false" revision="21.1.2" sha1="70656523d1ed53a2a882252d4f27f9c8f39850ca">
+        <dex
+            dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-javadoc -5d5d696aa3ef30483dc74b77c900a7a1b2bcfc98.jar" />
+    </item>
     <item
         jar="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\18.0.0\classes.jar"
         jumboMode="false" revision="21.1.2" sha1="8f11f56e350eacabf2273f646d981356eea0ed77">
         <dex
             dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\classes-0f993368cdc02c49aca59cd3a7e791aad7dabc09.jar" />
     </item>
-    <item jar="C:\Java\WSAS\ChatRepoGradle\app\libs\osmdroid-android-4.2-javadoc .jar"
-        jumboMode="false" revision="21.1.2" sha1="70656523d1ed53a2a882252d4f27f9c8f39850ca">
+    <item
+        jar="C:\Java\sdk\extras\android\m2repository\com\android\support\support-annotations\21.0.0\support-annotations-21.0.0.jar"
+        jumboMode="false" revision="21.1.2" sha1="1a578b9607b36266c63d43a4fa0ab5664dbe911e">
         <dex
-            dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-javadoc -5d5d696aa3ef30483dc74b77c900a7a1b2bcfc98.jar" />
+            dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-91c5a2009f54096d9ef0269c48ba828f6c9ce825.jar" />
     </item>
     <item jar="C:\Java\WSAS\ChatRepoGradle\app\libs\bolts-android-1.1.3.jar" jumboMode="false"
         revision="21.1.2" sha1="e61e3dfc57eaa5c97f9e7061db5608fc7d02d39e">
         <dex
             dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.3-e9d21d798478f4dbd0d9ebb5d33ee149d2382e96.jar" />
+    </item>
+    <item
+        jar="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\exploded-aar\com.android.support\support-v4\21.0.0\classes.jar"
+        jumboMode="false" revision="21.1.2" sha1="686344a780033e4ba22b926cd225f8d4941247e6">
+        <dex
+            dex="C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\classes-f1bef579080a78e5eefb5aea3dd679e094fe7050.jar" />
     </item>
 
 </items>

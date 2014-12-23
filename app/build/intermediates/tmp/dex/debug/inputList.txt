@@ -1,8 +1,11 @@
 C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\classes\debug
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\support-annotations-21.0.0-91c5a2009f54096d9ef0269c48ba828f6c9ce825.jar
 C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\slf4j-android-1.5.8-3d1a06ce99706d648aa6ffa1c4e7a722c37ed0c4.jar
 C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.3-e9d21d798478f4dbd0d9ebb5d33ee149d2382e96.jar
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\internal_impl-21.0.0-a877495e2b6b897abae1ccf25d25548c2ea7bbbe.jar
 C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\classes-0f993368cdc02c49aca59cd3a7e791aad7dabc09.jar
 C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-a20a4fba5672718e77ff06b9eebec3f47ca633bf.jar
-C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-1efbfc36b089dd5ef6c981046f380fc29c56ebcc.jar
 C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\Parse-1.7.1-6149e6e5c5536924cf1ce2b14434a610863e5794.jar
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\classes-f1bef579080a78e5eefb5aea3dd679e094fe7050.jar
 C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-javadoc -5d5d696aa3ef30483dc74b77c900a7a1b2bcfc98.jar
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\classes-f17ebfd57698bb941df897eba37a4819b77eeffb.jar

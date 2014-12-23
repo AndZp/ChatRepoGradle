@@ -21,9 +21,13 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Spinner;
 import android.widget.Toast;
 
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.InterstitialAd;
 import com.parse.FindCallback;
 import com.parse.ParseException;
 import com.parse.ParseGeoPoint;
@@ -65,10 +69,13 @@ public class MainActivity extends ActionBarActivity implements ServiceConnection
 
 	private CharSequence mDrawerTitle;
 	private CharSequence mTitle;
+    private AdView adView;
+    private InterstitialAd interstitial;
 
     @Override
     protected void onStop() {
         super.onStop();
+        displayInterstitial();
 
 
     }
@@ -93,6 +100,7 @@ public class MainActivity extends ActionBarActivity implements ServiceConnection
 
     @Override
     protected void onDestroy() {
+        adView.destroy();
         super.onDestroy();
         user.put("online", false);
         user.saveInBackground(new SaveCallback() {
@@ -108,22 +116,25 @@ public class MainActivity extends ActionBarActivity implements ServiceConnection
         super.onCreate(savedInstanceState);
 
 
-	    setContentView(R.layout.activity_main);
-	    mDrawerTitles = getResources().getStringArray(R.array.screen_array);
-	    mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
-	    mDrawerList = (ListView) findViewById(R.id.left_drawer);
-	    mTitle = mDrawerTitle = getTitle();
-	    // Set the adapter for the list view
-	    mDrawerList.setAdapter(new ArrayAdapter<String>(this,
-			    R.layout.drawer_list_item, mDrawerTitles));
-	    // Set the list's click listener
+        setContentView(R.layout.activity_main);
+
+        mDrawerTitles = getResources().getStringArray(R.array.screen_array);
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawerList = (ListView) findViewById(R.id.left_drawer);
+        mTitle = mDrawerTitle = getTitle();
+        // Set the adapter for the list view
+        mDrawerList.setAdapter(new ArrayAdapter<String>(this,
+                R.layout.drawer_list_item, mDrawerTitles));
+        // Set the list's click listener
 
         mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
                 switch (i) {
                     case 0:
+
                         findMap();
+
                         break;
                     case 1:
                         startActivity(new Intent(getApplicationContext(), Contactlist.class));
@@ -140,33 +151,37 @@ public class MainActivity extends ActionBarActivity implements ServiceConnection
         });
 
 
-	    mDrawerToggle = new ActionBarDrawerToggle(
-			    this,                  /* host Activity */
-			    mDrawerLayout,         /* DrawerLayout object */
-			    R.drawable.ic_drawer,  /* nav drawer icon to replace 'Up' caret */
-			    R.string.drawer_open,  /* "open drawer" description */
-			    R.string.drawer_close  /* "close drawer" description */
-	    ) {
+        mDrawerToggle = new ActionBarDrawerToggle(
+                this,                  /* host Activity */
+                mDrawerLayout,         /* DrawerLayout object */
+                R.drawable.ic_drawer,  /* nav drawer icon to replace 'Up' caret */
+                R.string.drawer_open,  /* "open drawer" description */
+                R.string.drawer_close  /* "close drawer" description */
+        ) {
 
-		    /** Called when a drawer has settled in a completely closed state. */
-		    public void onDrawerClosed(View view) {
-			    super.onDrawerClosed(view);
-			    getActionBar().setTitle(mTitle);
-		    }
+            /**
+             * Called when a drawer has settled in a completely closed state.
+             */
+            public void onDrawerClosed(View view) {
+                super.onDrawerClosed(view);
+                getActionBar().setTitle(mTitle);
+            }
 
-		    /** Called when a drawer has settled in a completely open state. */
-		    public void onDrawerOpened(View drawerView) {
-			    super.onDrawerOpened(drawerView);
-			    getActionBar().setTitle(mDrawerTitle);
-		    }
-	    };
+            /**
+             * Called when a drawer has settled in a completely open state.
+             */
+            public void onDrawerOpened(View drawerView) {
+                super.onDrawerOpened(drawerView);
+                getActionBar().setTitle(mDrawerTitle);
+            }
+        };
 
-	    // Set the drawer toggle as the DrawerListener
-	    mDrawerLayout.setDrawerListener(mDrawerToggle);
+        // Set the drawer toggle as the DrawerListener
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
 
-	    getActionBar().setDisplayHomeAsUpEnabled(true);
-	    getActionBar().setHomeButtonEnabled(true);
-	    lvChat = (ListView) findViewById(R.id.listView);
+        getActionBar().setDisplayHomeAsUpEnabled(true);
+        getActionBar().setHomeButtonEnabled(true);
+        lvChat = (ListView) findViewById(R.id.listView);
         myAdapter = new MyAdapter(getApplicationContext());
         lvChat.setAdapter(myAdapter);
 
@@ -191,10 +206,61 @@ public class MainActivity extends ActionBarActivity implements ServiceConnection
         user.saveInBackground();
         refreshUser();
         setLocation();
+
+        adMobBanner();
+
+
     }
 
-	@Override
-	protected void onPostCreate(Bundle savedInstanceState) {
+    @Override
+    protected void onStart() {
+        super.onStart();
+        // Создание межстраничного объявления.
+        interstitial = new InterstitialAd(getApplicationContext());
+        interstitial.setAdUnitId("ca-app-pub-9664735374505063/1325127034");
+
+        // Создание запроса объявления.
+        AdRequest adRequest = new AdRequest.Builder().build();
+
+        // Запуск загрузки межстраничного объявления.
+        interstitial.loadAd(adRequest);
+
+    }
+
+    // Вызовите displayInterstitial(), когда будете готовы показать межстраничное объявление.
+    public void displayInterstitial() {
+        if (interstitial.isLoaded()) {
+            interstitial.show();
+        }
+
+    }
+
+
+    public void adMobBanner() {
+        adView = new AdView(this);
+        adView.setAdUnitId("ca-app-pub-9664735374505063/1979431831");
+        adView.setAdSize(com.google.android.gms.ads.AdSize.BANNER);
+        RelativeLayout layout = (RelativeLayout) findViewById(R.id.rlMain);
+        layout.addView(adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        adView.loadAd(adRequest);
+    }
+
+    @Override
+    protected void onResume() {
+        adView.resume();
+        super.onResume();
+    }
+
+    @Override
+    protected void onPause() {
+        adView.pause();
+        super.onPause();
+
+    }
+
+    @Override
+    protected void onPostCreate(Bundle savedInstanceState) {
 
 		super.onPostCreate(savedInstanceState);
 		mDrawerToggle.syncState();
