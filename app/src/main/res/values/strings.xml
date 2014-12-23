@@ -7,10 +7,11 @@
     <string name="title_activity_registr">Registr</string>
     <string name="title_activity_mapa">Mapa</string>
 	<string-array name="screen_array">
-		<item>Settings</item>
-		<item>Map</item>
-		<item>Something else</item>
-	</string-array>
+        <item>Карта</item>
+        <item>Контакты</item>
+        <item>Настройки</item>
+        <item>Выход</item>
+    </string-array>
 	<string name="drawer_open">Open navigation drawer</string>
 	<string name="drawer_close">Close navigation drawer</string>
 </resources>

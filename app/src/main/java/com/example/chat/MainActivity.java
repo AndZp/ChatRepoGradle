@@ -1,6 +1,5 @@
 package com.example.chat;
 
-import android.app.Activity;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.ServiceConnection;
@@ -118,6 +117,28 @@ public class MainActivity extends ActionBarActivity implements ServiceConnection
 	    mDrawerList.setAdapter(new ArrayAdapter<String>(this,
 			    R.layout.drawer_list_item, mDrawerTitles));
 	    // Set the list's click listener
+
+        mDrawerList.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+                switch (i) {
+                    case 0:
+                        findMap();
+                        break;
+                    case 1:
+                        startActivity(new Intent(getApplicationContext(), Contactlist.class));
+                        break;
+                    case 2:
+                        startActivity(new Intent(getApplicationContext(), Setting.class));
+                        break;
+                    case 3:
+                        logOut();
+                        break;
+
+                }
+            }
+        });
+
 
 	    mDrawerToggle = new ActionBarDrawerToggle(
 			    this,                  /* host Activity */
@@ -278,25 +299,34 @@ public class MainActivity extends ActionBarActivity implements ServiceConnection
         }
 
         if (id == R.id.findMap) {
-            Intent intent = new Intent(getApplicationContext(), Mapa.class);
-            intent.putExtra("latitude", Singleton.getInstance().getUser().getParseGeoPoint("location").getLatitude());
-            intent.putExtra("longitude", Singleton.getInstance().getUser().getParseGeoPoint("location").getLongitude());
-            startActivity(intent);
+            findMap();
 
             return true;
         }
         if (id == R.id.logOut) {
-            ParseUser.logOut();
-            Singleton.getInstance().logOut();
-            this.getSharedPreferences("configur", MODE_PRIVATE).edit().clear().commit();
-            ParsePush.unsubscribeInBackground("chatLogin" + login);
-
-            startActivity(new Intent(getApplicationContext(), Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
+            logOut();
             return true;
         }
 
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void findMap() {
+        Intent intent = new Intent(getApplicationContext(), Mapa.class);
+        intent.putExtra("latitude", Singleton.getInstance().getUser().getParseGeoPoint("location").getLatitude());
+        intent.putExtra("longitude", Singleton.getInstance().getUser().getParseGeoPoint("location").getLongitude());
+        startActivity(intent);
+    }
+
+
+    public void logOut() {
+        ParseUser.logOut();
+        Singleton.getInstance().logOut();
+        this.getSharedPreferences("configur", MODE_PRIVATE).edit().clear().commit();
+        ParsePush.unsubscribeInBackground("chatLogin" + login);
+
+        startActivity(new Intent(getApplicationContext(), Login.class).setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP));
     }
 
     @Override

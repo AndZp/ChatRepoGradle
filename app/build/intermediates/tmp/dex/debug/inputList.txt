@@ -1,8 +1,8 @@
-D:\android\android-studio-projects\ChatRepoGradle\app\build\intermediates\classes\debug
-D:\android\android-studio-projects\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\slf4j-android-1.5.8-dd246fd436d91df1931912fad997c644b9a7db38.jar
-D:\android\android-studio-projects\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.3-c0b232d2d319b2301ec23fcc4fb3ef99f7b9fb01.jar
-D:\android\android-studio-projects\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\classes-ca492253623f89557b622d588efcd283251be53e.jar
-D:\android\android-studio-projects\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-6d1d23051681266f7df23bf26eb91c6fffbccf90.jar
-D:\android\android-studio-projects\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-ccf1976f2ed10671c81cbe19f136351b0d5865ab.jar
-D:\android\android-studio-projects\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\Parse-1.7.1-19168974eaf387671ffbe048b6b39f94155e3019.jar
-D:\android\android-studio-projects\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-javadoc -280151970849bda41892400b4c9bbd3baac64057.jar
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\classes\debug
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\slf4j-android-1.5.8-3d1a06ce99706d648aa6ffa1c4e7a722c37ed0c4.jar
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\bolts-android-1.1.3-e9d21d798478f4dbd0d9ebb5d33ee149d2382e96.jar
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\classes-0f993368cdc02c49aca59cd3a7e791aad7dabc09.jar
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-a20a4fba5672718e77ff06b9eebec3f47ca633bf.jar
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-1efbfc36b089dd5ef6c981046f380fc29c56ebcc.jar
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\Parse-1.7.1-6149e6e5c5536924cf1ce2b14434a610863e5794.jar
+C:\Java\WSAS\ChatRepoGradle\app\build\intermediates\pre-dexed\debug\osmdroid-android-4.2-javadoc -5d5d696aa3ef30483dc74b77c900a7a1b2bcfc98.jar
