@@ -6,4 +6,11 @@
     <string name="title_activity_login">Login</string>
     <string name="title_activity_registr">Registr</string>
     <string name="title_activity_mapa">Mapa</string>
+	<string-array name="screen_array">
+		<item>Settings</item>
+		<item>Map</item>
+		<item>Something else</item>
+	</string-array>
+	<string name="drawer_open">Open navigation drawer</string>
+	<string name="drawer_close">Close navigation drawer</string>
 </resources>
